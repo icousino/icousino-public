@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AUDIO — Historias para escuchar | icousino</title>
+
+  <meta
+    name="description"
+    content="Historias para escuchar. Podcasts sobre cultura, historia y preguntas que llevan a lugares inesperados."
+  >
+
+  <!-- TIPOGRAFÍAS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- ESTILOS GENERALES -->
+
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- ESTILOS EXCLUSIVOS DE AUDIO -->
+
+  <style>
+
+    /* CABECERA */
+
+    .audio-header {
+      justify-content: space-between;
+    }
+
+    .audio-label {
+      font-size: 11px;
+      letter-spacing: .08em;
+    }
+
+    /* PRESENTACIÓN */
+
+    .audio-intro {
+      max-width: 760px;
+      padding: 90px 0 85px;
+    }
+
+    .audio-intro h1 {
+      max-width: 740px;
+      text-wrap: balance;
+    }
+
+    .audio-intro .lead {
+      max-width: 650px;
+      line-height: 1.8;
+    }
+
+    /* PODCASTS EN DESARROLLO */
+
+    .audio-development {
+      border-top: 1px solid var(--line);
+      padding: 65px 0 80px;
+    }
+
+    .development-panel {
+      background: var(--cream);
+      border-top: 3px solid var(--audio);
+      padding: 48px;
+      max-width: 800px;
+    }
+
+    .development-panel .eyebrow {
+      color: var(--audio);
+      margin: 0;
+    }
+
+    .development-panel h2 {
+      font-family: "DM Serif Display", Georgia, serif;
+      font-size: clamp(30px, 4.5vw, 52px);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: -.02em;
+      margin: 24px 0;
+      text-wrap: balance;
+    }
+
+    .development-panel p:not(.eyebrow) {
+      max-width: 600px;
+      color: var(--muted);
+      font-family: Inter, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.85;
+      margin: 0;
+    }
+
+    /* PIE DE PÁGINA */
+
+    .audio-footer {
+      margin-top: 0;
+      padding: 28px 0 38px;
+    }
+
+    .audio-footer p {
+      margin: 0;
+    }
+
+    /* VERSIÓN MÓVIL */
+
+    @media (max-width: 650px) {
+
+      .audio-header {
+        gap: 16px;
+      }
+
+      .audio-label {
+        font-size: 10px;
+      }
+
+      .audio-intro {
+        padding: 65px 0 70px;
+      }
+
+      .audio-intro h1 {
+        font-size: clamp(38px, 9vw, 54px);
+        line-height: 1.12;
+      }
+
+      .audio-intro .lead {
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      .audio-development {
+        padding: 50px 0 60px;
+      }
+
+      .development-panel {
+        padding: 32px 25px;
+      }
+
+      .development-panel h2 {
+        font-size: clamp(30px, 8vw, 40px);
+        margin: 20px 0 24px;
+      }
+
+      .development-panel p:not(.eyebrow) {
+        font-size: 15px;
+      }
+
+      .audio-footer {
+        gap: 12px;
+        margin-top: 0;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- CABECERA -->
+
+  <header class="audio-header audio-shell">
+
+    <a
+      class="audio-logo"
+      href="/"
+      aria-label="Volver al inicio de icousino"
+    >
+      icousino
+    </a>
+
+    <span class="audio-label">
+      AUDIO / 02
+    </span>
+
+  </header>
+
+  <main class="audio-shell">
+
+    <!-- PRESENTACIÓN -->
+
+    <section
+      class="audio-intro"
+      aria-labelledby="audio-title"
+    >
+
+      <span class="audio-label">
+        ICOUSINO / AUDIO
+      </span>
+
+      <h1 id="audio-title">
+        Historias para escuchar
+      </h1>
+
+      <p class="lead">
+        Hay historias que conocemos de memoria.
+        Otras que nunca nos contaron.
+        Y algunas que empiezan con una pregunta
+        aparentemente insignificante.
+      </p>
+
+    </section>
+
+    <!-- EN DESARROLLO -->
+
+    <section
+      class="audio-development"
+      aria-labelledby="development-title"
+    >
+
+      <div class="development-panel">
+
+        <p class="eyebrow">
+          EN DESARROLLO
+        </p>
+
+        <h2 id="development-title">
+          Algo se está preparando
+        </h2>
+
+        <p>
+          Estoy trabajando en mis primeros podcasts.
+          Pronto.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+
+  <footer class="audio-footer audio-shell">
+
+    <p>
+      © 2026 icousino
+    </p>
+
+    <p>
+      Isidora Cousiño
+    </p>
+
+  </footer>
+
+</body>
+</html>
